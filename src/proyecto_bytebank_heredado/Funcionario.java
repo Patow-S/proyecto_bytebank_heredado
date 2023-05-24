@@ -1,4 +1,4 @@
-package proyecto_byte bank_heredado;
+package proyecto_bytebank_heredado;
 
 public class Funcionario {
 
@@ -33,15 +33,7 @@ public class Funcionario {
 	
 	//aqui metodo
 	public double getBonificacion(){
-		//tipo 0 = funcionario
-		//tipo 1 = gerente
-		if (this.tipo == 0) {
-			return this.salario * 0.1;
-		} else if (this.tipo == 1) {
-			return this.salario;
-		} else {
-			return 0;
-		}
+		return this.salario * 0.1;
 	}
 
 	public int getTipo() {
