@@ -1,4 +1,4 @@
-package proyecto_bytebank_heredado;
+package proyecto_byte bank_heredado;
 
 public class Funcionario {
 
