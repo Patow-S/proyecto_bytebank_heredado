@@ -11,6 +11,7 @@ public class Gerente extends Funcionario {
 	 }
 	 //Sobreescritura de metodo
 	 public double getBonificacion() {
+		 System.out.println("EJECUTAR DESDE GERENTE");
 		 return super.getSalario() + super.getBonificacion();
 	 }
 }
