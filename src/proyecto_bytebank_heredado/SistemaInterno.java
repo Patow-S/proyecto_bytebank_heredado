@@ -3,7 +3,7 @@ package proyecto_bytebank_heredado;
 public class SistemaInterno {
 	 private String clave = "123";
 	
-	public boolean autentica(FuncionarioAutenticable gerente) {
+	public boolean autentica(Autenticable gerente) {
 		
 		boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
 		if (puedeIniciarSesion) {

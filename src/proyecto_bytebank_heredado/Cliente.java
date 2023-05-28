@@ -24,7 +24,10 @@ public class Cliente {
 		this.tlf = tlf;
 	}
 	 
-	 
+	@Override
+	 public boolean iniciarSesion(String clave) {
+		 return false;
+	 }
 
 
 

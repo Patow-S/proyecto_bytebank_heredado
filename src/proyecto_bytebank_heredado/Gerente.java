@@ -1,6 +1,6 @@
 package proyecto_bytebank_heredado;
 // extiende de 
-public class Gerente extends FuncionarioAutenticable {
+public class Gerente extends Autenticable {
 
 	 //Sobreescritura de metodo
 	 public double getBonificacion() {
