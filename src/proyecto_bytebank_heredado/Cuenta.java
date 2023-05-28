@@ -1,14 +1,14 @@
 package proyecto_bytebank_heredado;
 
 
-public class Cuenta {
+public  abstract class Cuenta {
 
 	int nombre;
 	String apellido;                                  
-	private double saldo; 	                    // si esta private , saldo no es accesible 
+	protected double saldo; 	                    // si esta private , saldo no es accesible 
 	private int agencia;
 	private int numero;
-	Cliente titular = new Cliente();
+	private Cliente titular = new Cliente();
 	
 	private static int total= 0; 
 	
@@ -21,10 +21,7 @@ public class Cuenta {
 
     }    
 
-	public void depositar(double valor) { 	    // No retorna valor
-		this.saldo += valor;   		            // apunta a un objeto en especifico / rm : this.saldo = this.saldo + valor;
-
-	}
+	public abstract void depositar(double valor);
 
 	public boolean retirar(double valor) { 	    // Retorna valor
 		if (this.saldo >= valor) { 

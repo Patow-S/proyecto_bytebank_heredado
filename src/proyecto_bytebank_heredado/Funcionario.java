@@ -32,9 +32,7 @@ public abstract class Funcionario {
 	}
 	
 	//aqui metodo
-	public double getBonificacion(){
-		return this.salario * 0.1;
-	}
+	public abstract double getBonificacion();
 
 	public int getTipo() {
 		return tipo;
