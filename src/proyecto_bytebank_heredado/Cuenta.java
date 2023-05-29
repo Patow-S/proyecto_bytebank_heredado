@@ -10,12 +10,12 @@ public  abstract class Cuenta {
 	private int numero;
 	private Cliente titular = new Cliente();
 	
-	private static int total= 0; 
+	private static int total; 
 	
 	public Cuenta (int agencia, int numero) {
     	this.agencia = agencia;
     	this.numero = numero;
-    	System.out.println("Estoy creando una ");
+    	System.out.println("Estoy creando una cuenta" + this.numero);
     	
     	Cuenta.total++;
 
@@ -63,10 +63,14 @@ public  abstract class Cuenta {
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
+    public Cliente getTitular() {
+        return titular;
+    }
 	
 	public int getTotal() {
 		return Cuenta.total;
 	}
+	
 
 
 }
